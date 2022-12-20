@@ -105,12 +105,12 @@ You can evaluate a trained model on a set of sequences by running:
 python scripts/evaluate.py 
 ```
 
-The weights used and sequences tested are determined by parameters `ckpt_path` and `data_splits.test`, respectively. By default, the weights from the model we provide will be used and the `MOT15` and `MOT17` test sequences will be evaluated. The resulting output files yield the following `MOT17` metrics on the train/test set:
+The weights used and sequences tested are determined by parameters `ckpt_path` and `data_splits.test`, respectively. By default, the weights from the model we provide will be used and the `MOT15`, `MOT17` and `MOTS20` (MOT for MOT 17 segmentation) test sequences will be evaluated. The resulting output files yield the following `MOT17 segmenation` metrics on the train/test set:
 
-|    MOT17       | MOTA         | IDF1           |       FP     |     FN     |     IDs      |     MT              |     ML       |
-|  :---:    | :---:        |     :---:      |    :---:     | :---:      |    :---:     |   :---:             |  :---:       |
-| **Train** |     64.4     |     70.8       |    5087      |   114460   |     504      |     636 (38.8%)     |  362  (22.1%)|
-| **Test**  |     58.4     |     62.1       |    17836     | 214869     |     1146     |     655 (27.8%)     |  793 (33.7%) |
+|    MOT17       | MOTA         | IDF1       |
+|  :---:    | :---:        |     :---:      |   
+| **Train** |     76.4     |     73.8       |    
+| **Test**  |     73.6     |     68.7       |    
 
 Note that these results show a slight difference with respect to the ones reported in the paper. Specifically, IDF1 has improved by 0.5 points,
 and MOTA has decreased by 0.4 points. This change is due to using a newer pytorch version and small code differences introduced while cleaning-up.
