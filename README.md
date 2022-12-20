@@ -5,13 +5,14 @@ This the official implementation of our paper GNN-based Object Detection and Tra
 
 1. Clone and enter the repository.
 2. Create an [Anaconda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html):
- 1. Option 1: for working on `MOT15, MO16`, `MOT17`and `MOT20` datasets:
+
+ Option 1: for working on `MOT15, MO16`, `MOT17`and `MOT20` datasets:
   
     1. `conda env create -f environment.yaml`
     2. `conda activate mot_neural_solver`
     3. `pip install -e tracking_wo_bnw`
     4. `pip install -e .`
-  2. Option 2: For working on segmented image `MOTS20`:
+  Option 2: For working on segmented image `MOTS20`:
   
     1. `conda env create -f environment.yml`
     2. `conda activate MPNTrackSeg`
