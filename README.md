@@ -150,11 +150,6 @@ This will be done by searching output files containing `$RUN_ID` on them, so it'
 |  :---:    | :---:        |     :---:      |    :---:     | :---:      |    :---:     |   :---:             |  :---:       |
 | **Cross-Val** |     64.3     |     70.5       |    5610      |   114284   |     531      |     643 (39.3%)     |  363  (22.2%)|
 
-## Citation
- ```
- 
- 
- ```
 Please, also consider citing Tracktor if you use it for preprocessing detections:
 ```
   @InProceedings{tracktor_2019_ICCV,
